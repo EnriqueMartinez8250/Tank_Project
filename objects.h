@@ -11,7 +11,15 @@ using namespace std;
 // added a file
 
 
+/// edited below here
 
+Class Ammunition {
+    public:
+        const float weight = 
+
+};
+
+/*
 class Mpat{
     public:
         const float weight = 53.4;
@@ -49,6 +57,8 @@ class Cannister{
         std::cout<<"Weight: "<<weight<<std::endl;
     }
 };
+*/
+//Edited above here
 
 
 class Infantry{

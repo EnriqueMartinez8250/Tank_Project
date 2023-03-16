@@ -18,9 +18,6 @@ int main() //Driver code for the Menu
 
 
 
-    
-
-
     int user_selection = -1;
     std::cout<<"<----------------------------------------------------------------------------------------------------->"<<std::endl;
     std::cout<<"Welcome to the M1 Abrams Virtual range, we have a list of scenarios below to improve tanker readiness"<<std::endl;
