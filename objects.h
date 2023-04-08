@@ -3,61 +3,50 @@
 #include <string>
 //#include "controls.h"
 
-using namespace std;
 
 // the classes below are the types of Ammo types for those unaware
 // for example the class below 'Mpat' is a specific type of tank round
 
-// added a file
-
-
-/// edited below here
-
-Class Ammunition {
+class Ammunition{
     public:
-        const float weight = 
-
+        virtual void Display() = 0;
+        virtual float GetWeight() const = 0;
 };
 
-/*
-class Mpat{
+class Mpat : public Ammunition{
     public:
         const float weight = 53.4;
-    void MPAT_Display(){
-        std::cout<<"You have selected MPAT round \n";
-        std::cout<<"Weight: "<<weight<<std::endl;
-        
-    }
-        
+
+        void Display() override {
+            std::cout << "You have selected MPAT round\n";
+            std::cout << "Weight: " << weight << std::endl;
+        }
+
+
+        float GetWeight() const override {
+            return weight;
+            };
 };
 
-class Heat{
+
+class Heat : public Ammunition{
     public:
         const float weight = 50.5;
-    void Heat_Display(){
-        std::cout<<"You have selected Heat round \n";
-        std::cout<<"Weight: "<<weight<<std::endl;
-    }
+        void Display() override{
+            std::cout << "You have selected HEAT round\n";
+            std::cout << "Weight: " << weight << std::endl;
+        }
+
+        float GetWeight() const override {
+            return weight;
+            };
 };
 
-class Sabot{
-    public:
-        const float weight = 41.1;
-    void Sabot_Display(){
-        std::cout<<"You have selected Sabot round\n";
-        std::cout<<"Weight: "<<weight<<std::endl;
-    }
-};
 
-class Cannister{
-    public:
-        const float weight = 50.5;
-    void Cannister_Display(){
-        std::cout<<"You have selected Cannister round\n";
-        std::cout<<"Weight: "<<weight<<std::endl;
-    }
-};
-*/
+
+
+
+
 //Edited above here
 
 

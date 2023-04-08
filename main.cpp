@@ -9,10 +9,10 @@
 
 int main() //Driver code for the Menu
 {
-    Mpat Mround; //MPAT Class -> object
+    Mpat mpat; //MPAT Class -> object
     Heat HRound; //Heat Class -> object
-    Sabot Sround; //Sabot Class -> object
-    Cannister Cround; //Cannister Class -> object
+    //Sabot Sround; //Sabot Class -> object
+    //Cannister Cround; //Cannister Class -> object
 
     Infantry inf_target; //Infantry Class -> object
 
@@ -42,22 +42,23 @@ int main() //Driver code for the Menu
 
         switch(user_round_selection){
             case '1':
-                Mround.MPAT_Display();
+                mpat.Display();
                 Fighting();
                 
                 
                     
             break;
             case '2':
-                HRound.Heat_Display();
+                HRound.Display();
+                Fighting();
                 
             break;
             case '3':
-                Sround.Sabot_Display();
+                //Sround.Sabot_Display();
                 
             break;
             case '4':
-                Cround.Cannister_Display();
+                //Cround.Cannister_Display();
                 
             break;          
         }

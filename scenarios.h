@@ -25,10 +25,13 @@ void scenario()
     std::cout<<"Target type: "<<Target<<std::endl;
 
     //Randomizes the distance
-    for(int n=0; n<1; ++n)
-    std::cout<<"The enemy is at range: ";
-    std::cout << distr(gen) << ' '; // generate numbers
-    std::cout<<"Meters"<<std::endl;
+    for(int n=0; n<1; ++n){
+        std::cout<<"The enemy is at range: ";
+        std::cout << distr(gen) << ' '; // generate numbers
+        std::cout<<"Meters"<<std::endl;
+
+    }
+
 
 }
 
